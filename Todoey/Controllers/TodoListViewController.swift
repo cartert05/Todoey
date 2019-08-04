@@ -13,7 +13,7 @@ class TodoListViewController: UITableViewController {
     var itemArray = ["Find Mike", "Buy Eggos", "Destroy Demogorgon"]
     
     let defaults = UserDefaults.standard
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,11 +51,11 @@ class TodoListViewController: UITableViewController {
             tableView.cellForRow(at: indexPath)?.accessoryType = .none
             
         } else {
-        
-        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
             
         }
-            
+        
     }
     
     
